@@ -606,9 +606,9 @@ ol {
 	background-color: #31d0aa;
 }
 
-.footer-subscribe {
+/*.footer-subscribe {
 	margin-left: 80px;
-}
+} */
 
 .subscribe {
 	display: flex;
@@ -756,7 +756,6 @@ ol {
 	margin-bottom: 4px;
 }
 .input {
-
 	box-sizing: border-box;
 	width: 100%;
 	padding: 14px 14px 14px 38px;
@@ -896,4 +895,160 @@ textarea {
 .privacy-policy {
 	color: #4d5ae5;
 	text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+	.hero {
+		max-width: 428px;
+		padding: 112px 0;
+		height: 432px;
+		box-sizing: border-box;
+	}
+	.container {
+		width: 428px;
+		padding: 0;
+	}
+
+	.hero-title {
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.button-secondary {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		width: auto;
+		height: auto;
+	}
+	.actions {
+		display: none;
+	}
+	.team-list {
+		flex-direction: column;
+	}
+
+	.section {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+	.list-item {
+		width: auto;
+		margin-top: 72px;
+	}
+	.list-item:first-child {
+		margin-top: 0;
+	}
+	.section-title {
+		text-align: center;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.advantages {
+		display: none;
+	}
+	.people {
+		margin-top: 72px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.people:first-child {
+		margin-top: 0;
+	}
+	.customers-item {
+		height: 88px;
+		width: 190px;
+	}
+	.customers-button-list {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 72px;
+		box-sizing: border-box;
+		column-gap: 16px;
+		padding: 0 16px;
+	}
+	.mobile-footer {
+		flex-direction: column;
+	}
+	.footer-item {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer-title {
+		text-align: center;
+		padding-top: 72px;
+	}
+	.subscribe {
+		display: block;
+		justify-content: center;
+	}
+	.subscribe-button {
+		margin-top: 16px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.email {
+		width: 100%;
+	}
+
+	.card-set {
+		flex-direction: column;
+	}
+	.item {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.portfolio-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 16px;
+		justify-content: flex-start;
+	}
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (max-width: 768px) {
+	.hero {
+		width: 768px;
+		padding: 112px 0;
+		box-sizing: border-box;
+	}
+
+	.container {
+		width: 768px;
+	}
+	.button-secondary {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		align-items: center;
+		letter-spacing: 0.04em;
+		width: auto;
+		height: auto;
+	}
+	.actions {
+		display: none;
+	}
+	.team-list {
+		
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 50%;
+		column-gap: 72px;
+		row-gap:24px ;
+	}
+	.list-itemn {
+		
+		width: auto;
+		column-gap: 72px;
+		row-gap:24px ;
+	}
+	 .advantages {
+		display: none;}
+
 }
