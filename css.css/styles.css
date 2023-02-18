@@ -71,6 +71,7 @@ ol {
 .logo-color {
 	color: var(--accent-color);
 }
+
 .hero {
 	background-color: var(--primary-text-color);
 	text-align: center;
@@ -165,8 +166,10 @@ ol {
 	margin-bottom: 0;
 }
 .container {
-	padding-top: 96px;
-	padding-bottom: 128px;
+	padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team-list {
 	margin-right: auto;
@@ -445,6 +448,44 @@ ol {
 	padding: 8px 16px;
 	margin: 0 15px;
 }
+/*MENU-BACKDROP*/
+.menu-backdrop {
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(46, 47, 66, 0.4);
+overflow-y: scroll;
+	opacity: 1;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(0, 9);
+}
+.modal-menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	min-width: 408px;
+	min-height: 576px;
+
+	background-color: #fcfcfc;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transform: translate(-50%, -50%) scale(1);
+}
+.menu-button {
+	width: 32px;
+height: 22px;
+}
 
 /*BACKDROP*/
 
@@ -457,7 +498,7 @@ ol {
 	height: 100%;
 
 	background-color: rgba(46, 47, 66, 0.4);
-
+overflow-y: scroll;
 	opacity: 1;
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -683,15 +724,17 @@ textarea {
 	text-decoration: underline;
 }
 
-@media screen and (min-width:768px) and (max-width:1140px){
-	.team-list {
-	display: flex;
-	
+@media screen and (min-width: 480px) {
+  .container {
+   width: 428px;
+  }
+}
 
-	}
-	.list-item {
-		flex-basis: calc((100%-20px)/2);
-	}
+@media screen and (min-width:768px) {
+	.container {
+     width: 768px;
+  }
+	
 	.section-description {
 		font-weight: 700;
 font-size: 36px;
@@ -704,13 +747,37 @@ line-height: 24px;
 	}
 
 }
-
-@media (max-width: 1140px) {
-.actions {
+@media screen and (max-width: 786px){
+.site-nav {
+	display: none;
+}
+.auth-nav {
 	display: none;
 }
 }
-@media (max-width: 1140px) {
+@media screen and (min-width:768px) and (max-width:1140px){
+	.team-list {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.list-item {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1058px;
+
+  }
+
+}
+
+@media screen and (max-width: 1058px) {
+.actions {
+	display: none;
+}
 .advantages {
 	display: none;
 }

@@ -34,6 +34,7 @@
 						<li class="item"><a href="tel:+11(000)111-11-11" class="link list-style">+11 (000) 111-11-11</a></li>
 					</ul>
 				</nav>
+				<button type="button" class="menu-button" data-modal-open> open </button>
 			</div>
 		</header>
 
@@ -60,7 +61,9 @@
 								</svg>
 							</div>
 							<h3 class="section-description">Strategy</h3>
-							<p class="text-description">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+							<p class="text-description"
+								>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p
+							>
 						</li>
 
 						<li class="list-item">
@@ -70,7 +73,9 @@
 								</svg>
 							</div>
 							<h3 class="section-description">Punctuality</h3>
-							<p class="text-description">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+							<p class="text-description"
+								>Bring the key message to the brand's audience for the best price within the shortest possible time.</p
+							>
 						</li>
 
 						<li class="list-item">
@@ -93,7 +98,9 @@
 								</svg>
 							</div>
 							<h3 class="section-description">Technologies</h3>
-							<p class="text-description">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+							<p class="text-description"
+								>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p
+							>
 						</li>
 					</ul>
 				</div>
@@ -381,6 +388,61 @@
 			</div>
 		</footer>
 
+		<div class="menu-backdrop is-hidden" data-backdrop >
+			<div class="modal-menu">
+				<button data-close-modal class=""></button>
+
+				<div class="navigation">
+					<ul class="">
+						<li class="item"><a href="" class="site-list link">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+						<li class="item"><a href="" class="link">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="contacts">
+					<ul class="">
+						<li class="item"><a href="mailto:info@devstudio.com" class="link list-style">info@devstudio.com</a></li>
+						<li class="item"><a href="tel:+11(000)111-11-11" class="link list-style">+11 (000) 111-11-11</a></li>
+					</ul>
+			
+				</div>
+				<div>
+					<ul class="team-button-list">
+									<li class="team-link-list">
+										<a href="" class="team-button">
+											<svg class="team-icon" width="16" height="16">
+												<use href="./img/symbol-defs.svg#icon-instagram"></use>
+											</svg>
+										</a>
+									</li>
+
+									<li class="team-link-list">
+										<a href="" class="team-button">
+											<svg class="team-icon" width="16" height="16">
+												<use href="./img/symbol-defs.svg#icon-twitter"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="team-link-list">
+										<a href="" class="team-button">
+											<svg class="team-icon" width="16" height="16">
+												<use href="./img/symbol-defs.svg#icon-facebook"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="team-link-list">
+										<a href="" class="team-button">
+											<svg class="team-icon" width="16" height="16">
+												<use href="./img/symbol-defs.svg#icon-linkedin"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+				</div>
+			</div>
+		</div>
+		<script src="/js/menu-modal.js"></script>
+
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal modal-close">
 				<button class="button-close" data-modal-close>
@@ -438,5 +500,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+
 	</body>
 </html>
