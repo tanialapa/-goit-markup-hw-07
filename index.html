@@ -34,13 +34,17 @@
 						<li class="item"><a href="tel:+11(000)111-11-11" class="link list-style">+11 (000) 111-11-11</a></li>
 					</ul>
 				</nav>
-				<button type="button" class="menu-button" data-modal-open> open </button>
+				<button type="button" class="menu-button js-open-menu">
+					<svg width="32" height="22">
+						<use href="./img/symbol-defs.svg#icon-menu-hamburger"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 
 		<main>
 			<section class="hero">
-				<div class="container">
+				<div class="container container-main-page">
 					<h1 class="hero-title"
 						>Effective Solutions <br />
 						for Your Business</h1
@@ -53,7 +57,7 @@
 			<section class="section">
 				<div class="container">
 					<!--<h2 class="section">Our description</h2> -->
-					<ul class="team-list list">
+					<ul class="adv-list">
 						<li class="list-item">
 							<div class="actions">
 								<svg class="button-icon" width="64" height="64">
@@ -388,59 +392,83 @@
 			</div>
 		</footer>
 
-		<div class="menu-backdrop is-hidden" data-backdrop >
-			<div class="modal-menu">
-				<button data-close-modal class=""></button>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
 
-				<div class="navigation">
-					<ul class="">
-						<li class="item"><a href="" class="site-list link">Studio</a></li>
-						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-						<li class="item"><a href="" class="link">Contacts</a></li>
-					</ul>
-				</div>
-				<div class="contacts">
-					<ul class="">
-						<li class="item"><a href="mailto:info@devstudio.com" class="link list-style">info@devstudio.com</a></li>
-						<li class="item"><a href="tel:+11(000)111-11-11" class="link list-style">+11 (000) 111-11-11</a></li>
-					</ul>
-			
-				</div>
-				<div>
-					<ul class="team-button-list">
-									<li class="team-link-list">
-										<a href="" class="team-button">
-											<svg class="team-icon" width="16" height="16">
-												<use href="./img/symbol-defs.svg#icon-instagram"></use>
-											</svg>
-										</a>
-									</li>
+		<script defer src="js/mobile-menu.js"></script>
 
-									<li class="team-link-list">
-										<a href="" class="team-button">
-											<svg class="team-icon" width="16" height="16">
-												<use href="./img/symbol-defs.svg#icon-twitter"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="team-link-list">
-										<a href="" class="team-button">
-											<svg class="team-icon" width="16" height="16">
-												<use href="./img/symbol-defs.svg#icon-facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="team-link-list">
-										<a href="" class="team-button">
-											<svg class="team-icon" width="16" height="16">
-												<use href="./img/symbol-defs.svg#icon-linkedin"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
+		<div class="menu-backdrop js-menu-container" data-backdrop>
+			<div class="container container-modal">
+				<button class="close-menu-mobile js-close-menu">
+					<svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+						<path
+							fill-rule="evenodd"
+							d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+							clip-rule="evenodd"
+						></path>
+					</svg>
+				</button>
+				<div class="modal-menu">
+					<div class="navigation">
+						<ul class="navigation-list">
+							<li class="item"><a href="" class="site-list link">Studio</a></li>
+							<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+							<li class="item"><a href="" class="link">Contacts</a></li>
+						</ul>
+					</div>
+					<div>
+						<div class="contacts">
+							<ul class="navigation-list">
+								<li class="item phone"
+									><a href="tel:+11(000)111-11-11" class="link list-style">+11 (000) 111-11-11</a></li
+								>
+								<li class="item mail"
+									><a href="mailto:info@devstudio.com" class="link list-style">info@devstudio.com</a></li
+								>
+							</ul>
+						</div>
+						<div>
+							<ul class="team-button-list">
+								<li class="team-link-list">
+									<a href="" class="team-button">
+										<svg class="team-icon" width="16" height="16">
+											<use href="./img/symbol-defs.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="team-link-list">
+									<a href="" class="team-button">
+										<svg class="team-icon" width="16" height="16">
+											<use href="./img/symbol-defs.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-link-list">
+									<a href="" class="team-button">
+										<svg class="team-icon" width="16" height="16">
+											<use href="./img/symbol-defs.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-link-list">
+									<a href="" class="team-button">
+										<svg class="team-icon" width="16" height="16">
+											<use href="./img/symbol-defs.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<script src="/js/menu-modal.js"></script>
 
 		<div class="backdrop is-hidden" data-modal>
@@ -500,6 +528,5 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
-
 	</body>
 </html>
