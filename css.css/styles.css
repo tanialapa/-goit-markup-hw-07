@@ -83,7 +83,7 @@ ol {
 	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url("../img/people-office-1.jpg");
 
-	max-width: 1440px;
+	max-width: 1600px;
 	margin-right: auto;
 	margin-left: auto;
 	background-repeat: no-repeat;
@@ -452,13 +452,13 @@ ol {
 	box-sizing: border-box;
 	width: 264px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	width: 100%;
+	width: 264px;
 	font-size: 12px;
 	line-height: 24px;
 	border-radius: 4px;
 	background-color: #2e2f42;
 	padding: 8px 16px;
-	/* margin: 0 15px; */
+	
 }
 /*MENU-BACKDROP*/
 .menu-backdrop {
@@ -836,7 +836,9 @@ textarea {
 		padding-top: 24px;
 		padding-bottom: 24px;
 	}
-	
+	.email {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -897,9 +899,11 @@ textarea {
 		margin-bottom: 0;
 		flex-basis: calc((100% - 24px) / 2);
 	}
-	.customers-item {
+	
+	
+	 .customers-item {
 		width: calc(100% / 3 - 16px * 2);
-	}
+	} 
 	.hero {
 		padding-top: 112px;
 		padding-bottom: 108px;
@@ -942,12 +946,27 @@ textarea {
 	}
 
 	.footer-list {
+		margin-left: auto;
+		margin-right: auto;
 		display: flex;
 		flex-wrap: wrap;
+		row-gap: 72px;
+		column-gap: 24px;
 	}
-	.footer-subscribe {
+	
+	
+	.subscribe {
 		display: flex;
+	
 	}
+	.footer-title {
+		text-align: left;
+	}
+	.subscribe-button {
+		margin-top: 0;
+		margin-left: 24px;
+	}
+	
 }
 
 @media screen and (min-width: 1200px) {
