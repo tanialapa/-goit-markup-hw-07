@@ -21,24 +21,26 @@
 
 	<body class="body">
 		<header>
-			<div class="container-header">
-				<nav class="main-nav">
-					<a href="/" class="logo"> <span class="logo-color">WEB</span>STUDIO </a>
-					<ul class="site-nav list">
-						<li class="item active"><a href="" class="site-list link">Studio</a></li>
-						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-						<li class="item"><a href="" class="link">Contacts</a></li>
-					</ul>
-					<ul class="auth-nav list">
-						<li class="item"><a href="mailto:info@devstudio.com" class="link list-style">info@devstudio.com</a></li>
-						<li class="item"><a href="tel:+11(000)111-11-11" class="link list-style">+11 (000) 111-11-11</a></li>
-					</ul>
-				</nav>
-				<button type="button" class="menu-button js-open-menu">
-					<svg width="32" height="22">
-						<use href="./img/symbol-defs.svg#icon-hamburger-3-1"></use>
-					</svg>
-				</button>
+			<div class="container">
+				<div class="mobile-flex">
+					<nav class="main-nav">
+						<a href="/" class="logo"> <span class="logo-color">WEB</span>STUDIO </a>
+						<ul class="site-nav list">
+							<li class="item active"><a href="" class="site-list link">Studio</a></li>
+							<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+							<li class="item"><a href="" class="link">Contacts</a></li>
+						</ul>
+						<ul class="auth-nav list">
+							<li class="item"><a href="mailto:info@devstudio.com" class="link list-style">info@devstudio.com</a></li>
+							<li class="item"><a href="tel:+11(000)111-11-11" class="link list-style">+11 (000) 111-11-11</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu-button js-open-menu">
+						<svg width="32" height="22">
+							<use href="./img/charm_menu-hamburger (3).svg"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</header>
 
@@ -335,7 +337,7 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer-list mobile-footer">
+				<div class="footer-list">
 					<div class="footer-item">
 						<a href="/" class="logo"> <span class="logo-color">WEB</span><span class="footer-color">STUDIO</span> </a>
 
@@ -344,7 +346,7 @@
 						</p>
 					</div>
 
-					<div class="mobile-footer">
+					<div class="footer-item">
 						<h3 class="footer-title">Social media</h3>
 						<ul class="footer-button-list">
 							<li class="footer-link-list">
@@ -377,7 +379,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer-subscribe mobile-footer">
+
+					<div class="footer-subscribe footer-item">
 						<p class="footer-title"> Subscribe </p>
 						<form class="subscribe">
 							<input class="email" type="email" name="email" placeholder="E-mail" />
