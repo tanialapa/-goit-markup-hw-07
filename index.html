@@ -115,9 +115,24 @@
 				<div class="container">
 					<h2 class="part">What are we doing </h2>
 					<ul class="team-list-advantages list">
-						<li class="item-card"><img src="./img/onemonitor.jpg" alt="one monitor" width="360" /> </li>
-						<li class="item-card"><img src="./img/manymonitors.jpg" alt="phone" width="360" /></li>
-						<li class="item-card"><img src="./img/phoneinhand.jpg" alt="phone in hand" width="360" /> </li>
+						<li class="item-card">
+							<picture>
+								<source srcset="./img/onemonitor.jpg 1x, ./img/Onemonitor2X 2x.jpg" />
+								<img src="./img/onemonitor.jpg" alt="one monitor" width="360" />
+							</picture>
+						</li>
+						<li class="item-card">
+							<picture>
+								<source srcset="./img/manymonitors.jpg 1x, ./img/manymonitors 2X.jpg 2x.jpg" />
+								<img src="./img/manymonitors.jpg" alt="phone" width="360" />
+							</picture>
+						</li>
+						<li class="item-card">
+							<picture>
+								<source srcset="./img/phoneinhand.jpg 1x, ./img.phoneinhand2X.jpg 2x.jpg" />
+								<img src="./img/phoneinhand.jpg" alt="phone in hand" width="360" />
+							</picture>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -127,7 +142,11 @@
 					<h2 class="part">Our Team</h2>
 					<ul class="team-list list">
 						<li class="people">
-							<img src="./img/menwihtbeard.jpg" class="img" alt="men with beard" width="260" />
+							<picture>
+								<source srcset="./img/menwihtbeard.jpg 1x, ./img/menwithbeard2X.jpg 2x.jpg" />
+								<img src= />
+							</picture>
+							
 							<div class="img-text">
 								<h3 class="section-title">Mark Guerrero</h3>
 								<p>Product Designer</p>
@@ -165,7 +184,11 @@
 							</div>
 						</li>
 						<li class="people">
-							<img src="./img/men.jpg" class="img" alt="men" width="260" />
+							<picture>
+								<source srcset="./img/men.jpg 1x, ./img/men2X.jpg 2x.jpg" />
+								<img src="./img/men.jpg" class="img" alt="men" width="260" />
+							</picture>
+
 							<div class="img-text">
 								<h3 class="section-title">Tom Ford</h3>
 								<p>Frontend Developer</p>
@@ -202,7 +225,11 @@
 							</div>
 						</li>
 						<li class="people">
-							<img src="./img/girl.jpg" class="img" alt="girl" width="260" />
+							<picture>
+								<source srcset="./img/girl.jpg 1x, ./img/girl 2X.jpg 2x.jpg" />
+								<img src="./img/girl.jpg" class="img" alt="girl" width="260" />
+							</picture>
+							
 							<div class="img-text">
 								<h3 class="section-title">Camila Garcia</h3>
 								<p>Marketing</p>
@@ -239,7 +266,11 @@
 							</div>
 						</li>
 						<li class="people">
-							<img src="./img/menwihtsmile.jpg" class="img" alt="men with smile" width="260" />
+							<picture>
+								<source srcset="./img/menwihtsmile.jpg 1x, ./img/menwithsmile2X.jpg 2x.jpg" />
+								<img src="./img/menwihtsmile.jpg" class="img" alt="men with smile" width="260" />
+							</picture>
+							
 							<div class="img-text">
 								<h3 class="section-title">Daniel Wilson</h3>
 
@@ -380,7 +411,7 @@
 						</ul>
 					</div>
 
-					<div class="footer-subscribe ">
+					<div class="footer-subscribe">
 						<p class="footer-title"> Subscribe </p>
 						<form class="subscribe">
 							<input class="email" type="email" name="email" placeholder="E-mail" />

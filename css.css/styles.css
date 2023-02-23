@@ -80,10 +80,9 @@ ol {
 .hero {
 	background-color: var(--primary-text-color);
 	text-align: center;
-	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-		url("../img/people-office-1.jpg");
+	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 
-	max-width: 1600px;
+	max-width: 1440px;
 	margin-right: auto;
 	margin-left: auto;
 	background-repeat: no-repeat;
@@ -458,7 +457,6 @@ ol {
 	border-radius: 4px;
 	background-color: #2e2f42;
 	padding: 8px 16px;
-	
 }
 /*MENU-BACKDROP*/
 .menu-backdrop {
@@ -799,6 +797,37 @@ textarea {
 	line-height: 40px;
 }
 
+.hero {
+	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/bg_428_1x.jpg");
+}
+@media (min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/bg_428_2x.jpg");
+	}
+}
+@media (min-width: 489px) {
+	.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/bg_768_1x.jpg");
+	}
+	@media (min-resolution: 2dppx) {
+		.hero {
+			background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/bg_428_2x.jpg");
+		}
+	}
+}
+
+@media (min-width: 769px) {
+	.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/bg_1440_1x.jpg");
+	}
+	@media (min-resolution: 2dppx) {
+		.hero {
+			background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../img/bg_1440_2x.jpg");
+		}
+	}
+}
+
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
 	.container {
 		max-width: 428px;
@@ -899,11 +928,10 @@ textarea {
 		margin-bottom: 0;
 		flex-basis: calc((100% - 24px) / 2);
 	}
-	
-	
-	 .customers-item {
+
+	.customers-item {
 		width: calc(100% / 3 - 16px * 2);
-	} 
+	}
 	.hero {
 		padding-top: 112px;
 		padding-bottom: 108px;
@@ -953,11 +981,9 @@ textarea {
 		row-gap: 72px;
 		column-gap: 24px;
 	}
-	
-	
+
 	.subscribe {
 		display: flex;
-	
 	}
 	.footer-title {
 		text-align: left;
@@ -966,7 +992,6 @@ textarea {
 		margin-top: 0;
 		margin-left: 24px;
 	}
-	
 }
 
 @media screen and (min-width: 1200px) {
@@ -980,9 +1005,6 @@ textarea {
 	.hero {
 		padding-top: 188px;
 		padding-bottom: 188px;
-		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-			url("../img/people-office-1.jpg");
-
 		max-width: 1440px;
 		margin-right: auto;
 		margin-left: auto;
@@ -1095,7 +1117,7 @@ textarea {
 	.team-list-advantages {
 		display: flex;
 	}
-	.advantages {
+	.section-advantages {
 		display: block;
 	}
 	.item-card {
